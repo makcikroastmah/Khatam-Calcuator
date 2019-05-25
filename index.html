@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="teal">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo margin-left-10">Khatam App</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Home</a></li>
+                <li><a href="#bypge">By Pages</a></li>
+                <li><a href="collapsible.html">By Days</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home-section" class="center-align teal lighten-5 ">
+            <h1 class="animated pulse">Khatam Calculator</h1>
+            <p class="flow-text title-caption animated pulse" id="sentence1">This is a simple web app that helps you gauge how long it will take for you to khatam the Quran</p>
+            <br>
+            <a class="waves-effect waves-light btn-large pages-btn margin-right-20" href="#bypge">By Pages</a>
+            <a class="waves-effect waves-light btn-large" href="#days-section">By Days</a>
+    </div>
+    <div id="bypge">
+        <h1>By Pages</h1>
+        <p id="sentence2">Find out how many days it will take to khatam by specifying how many pages you plan to read daily</p>
+        <div class="center-align container" id="inptnmbr">
+                <div class="input-field col s6">
+                  <input id="input-pages" type="number" class="validate">
+                  <label class="active" for="input-pages">Number of pages</label>
+                </div>
+                <button class="btn waves-effect waves-light btn-large calculate-btn" type="button" onclick="calculateDaysNeeded()">Calculate
+                        <i class="material-icons right">send</i>
+                </button>
+                <div class="row center-align margin-top-20">
+                    <div class="card-panel teal lighten-5">
+                        <span id="pages-output">Your results will display here after you click the 'Calculate' button.</span>
+                    </div>
+                </div>
+              </div>
+              <footer class="page-footer teal">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col l6 s12">
+                          <h5 class="white-text">About App</h5>
+                          <p class="grey-text text-lighten-4">This is a coding project that was done during a Code Hero session to gauge how long it will take for one to khatam the Quran.</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                          <h5 class="white-text">My Other Apps</h5>
+                          <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://makcikroastmah.github.io/Calculator/">Basic Calculator</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://makcikroastmah.github.io/Grade-calculator/">Grade Calculator</a></li>
+                            
+        
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-copyright">
+                      <div class="container">
+                            &copy; 2019 Code Hero Project by Ayman A
+                      <a class="grey-text text-lighten-4 right" href="https://github.com">My Github</a>
+                      </div>
+                    </div>
+                  </footer>
+        
+        
+    </div>
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
